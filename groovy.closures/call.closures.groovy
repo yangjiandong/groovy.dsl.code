@@ -16,10 +16,10 @@ class CThread extends Thread{
 
 CThread up = new CThread(
   {
-    [1..9].each{
+    [1..9]*.each{
       sleep(100);
-      println "to:";
-      // println it;
+      //println "to:";
+      println it;
     }
   }
 )
