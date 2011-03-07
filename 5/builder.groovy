@@ -10,5 +10,9 @@ def customers = builder.customers {
         name(firstName:"Barney",surname:"Rubble")
         address(street:"2 Rock Road",city:"Bedrock") 
     }    
+    customer(id:1003) {
+        name(firstName:"Barney",surname:"罗杰斯他")
+        address(street:"2 Rock Road",city:"Bedrock") 
+    }    
 }
 
