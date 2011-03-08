@@ -18,4 +18,14 @@ assert customer.properties == [
   street:'1 Rock Road'
 ]
 
-customer.properties.each{println it}
+//add method
+customer.prettyPrint = {
+  println "Customer has following properties"
+  customer.properties.each{
+    if (it.key != 'prettyPrint')
+      println "   " + it.key + ": " + it.value
+  }
+}
+
+//customer.properties.each{println it}
+customer.prettyPrint()
